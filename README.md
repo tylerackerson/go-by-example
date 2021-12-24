@@ -1,2 +1,14 @@
-# go-by-example
-Working through https://gobyexample.com/ and learning vim along the way https://www.barbarianmeetscoding.com/blog/boost-your-coding-fu-with-vscode-and-vim
+# Go by Example
+
+## resources:
+
+- [Go by Example](https://gobyexample.com/)
+- [Boost Your Coding Fu with VSCode and Vim](https://www.barbarianmeetscoding.com/blog/boost-your-coding-fu-with-vscode-and-vim)
+  - **NB:** there is a [VS Code Plugin](https://marketplace.visualstudio.com/items?itemName=vintharas.learn-vim) for this
+
+## shortcuts
+
+```
+# creating director/ file for each module
+export t={module-name} && mkdir $t && touch $t.go && code $t.go
+```
