@@ -8,7 +8,16 @@
 
 ## shortcuts
 
+### creating director/ file for each module
+
+_command line:_
+
 ```
-# creating director/ file for each module
 export t={module-name} && mkdir $t && touch $t.go && code $t.go
+```
+
+_or use the bash command:_
+
+```
+./module.sh {module-name}
 ```
