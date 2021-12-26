@@ -15,6 +15,9 @@ type rect struct {
 type circle struct {
 	radius float64
 }
+type square struct {
+	height float64
+}
 
 // rectangle
 func (r rect) area() float64 {
@@ -32,6 +35,14 @@ func (c circle) perim() float64 {
 	return 2 * math.Pi * c.radius
 }
 
+// square
+func (s square) area() float64 {
+	return s.height * s.height
+}
+func (s square) perim() float64 {
+	return 4 * s.height
+}
+
 func measure(g geometry) {
 	fmt.Println(g)
 	fmt.Println(g.area())
@@ -41,6 +52,8 @@ func measure(g geometry) {
 func main() {
 	r := rect{width: 3, height: 4}
 	c := circle{radius: 5}
+	s := square{height: 3}
 	measure(r)
 	measure(c)
+	measure(s)
 }
